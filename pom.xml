@@ -286,6 +286,15 @@
 			<version>4.5.10</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/ch.vorburger.mariaDB4j/mariaDB4j -->
+		<dependency>
+			<groupId>ch.vorburger.mariaDB4j</groupId>
+			<artifactId>mariaDB4j</artifactId>
+			<version>2.4.0</version>
+<!--			<scope>test</scope>-->
+		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/io.swagger/swagger-jersey-jaxrs -->
 		<dependency>
 			<groupId>io.swagger</groupId>
@@ -340,6 +349,14 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<version>9.0.30</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+			<version>9.0.30</version>
+		</dependency>
+
 
 
 		<dependency>
