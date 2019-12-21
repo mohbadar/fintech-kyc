@@ -2,6 +2,9 @@
 package af.asr.kyc.infrastructure.core.serialization;
 
 
+import af.asr.kyc.infrastructure.core.api.JodaDateTimeAdapter;
+import af.asr.kyc.infrastructure.core.api.JodaLocalDateAdapter;
+import af.asr.kyc.infrastructure.core.api.JodaMonthDayAdapter;
 import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 import org.joda.time.MonthDay;
