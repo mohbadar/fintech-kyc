@@ -1,6 +1,11 @@
 
 package af.asr.kyc.infrastructure.configuration.domain;
 
+import af.asr.kyc.infrastructure.configuration.data.GlobalConfigurationPropertyData;
+import af.asr.kyc.infrastructure.configuration.exception.GlobalConfigurationPropertyCannotBeModfied;
+import af.asr.kyc.infrastructure.core.api.JsonCommand;
+import af.asr.kyc.infrastructure.core.domain.AbstractPersistableCustom;
+
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -9,11 +14,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import org.apache.fineract.infrastructure.configuration.data.GlobalConfigurationPropertyData;
-import org.apache.fineract.infrastructure.configuration.exception.GlobalConfigurationPropertyCannotBeModfied;
-import org.apache.fineract.infrastructure.core.api.JsonCommand;
-import org.apache.fineract.infrastructure.security.exception.ForcePasswordResetException;
-import org.apache.fineract.infrastructure.core.domain.AbstractPersistableCustom;
 
 @Entity
 @Table(name = "c_configuration")
@@ -97,11 +97,11 @@ public class GlobalConfigurationProperty extends AbstractPersistableCustom<Long>
             this.dateValue = newDateValue;
         }
 
-        final String passwordPropertyName = "force-password-reset-days";
-        if (this.name.equalsIgnoreCase(passwordPropertyName)) {
-            if (this.enabled == true && command.hasParameter(valueParamName) && this.value == 0 || this.enabled == true
-                    && !command.hasParameter(valueParamName) && previousValue == 0) { throw new ForcePasswordResetException(); }
-        }
+//        final String passwordPropertyName = "force-password-reset-days";
+//        if (this.name.equalsIgnoreCase(passwordPropertyName)) {
+//            if (this.enabled == true && command.hasParameter(valueParamName) && this.value == 0 || this.enabled == true
+//                    && !command.hasParameter(valueParamName) && previousValue == 0) { throw new ForcePasswordResetException(); }
+//        }
 
         return actualChanges;
 

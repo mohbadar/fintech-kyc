@@ -1,7 +1,8 @@
 
 package af.asr.kyc.infrastructure.configuration.service;
 
-import org.apache.fineract.infrastructure.configuration.data.ExternalServicesData;
+
+import af.asr.kyc.infrastructure.configuration.data.ExternalServicesData;
 
 public interface ExternalServicesReadPlatformService {
 

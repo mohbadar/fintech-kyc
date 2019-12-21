@@ -1,8 +1,9 @@
 
 package af.asr.kyc.infrastructure.configuration.service;
 
-import org.apache.fineract.infrastructure.configuration.data.GlobalConfigurationData;
-import org.apache.fineract.infrastructure.configuration.data.GlobalConfigurationPropertyData;
+
+import af.asr.kyc.infrastructure.configuration.data.GlobalConfigurationData;
+import af.asr.kyc.infrastructure.configuration.data.GlobalConfigurationPropertyData;
 
 public interface ConfigurationReadPlatformService {
 
