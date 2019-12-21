@@ -1,14 +1,24 @@
-package af.asr.kyc.infrastructure.configuration.data;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+package af.asr.kyc.infrastructure.configuration.data;
 
 import java.io.Serializable;
 
-@AllArgsConstructor
-@Getter
 public class ExternalServicesPropertiesData implements Serializable {
 
-    private String name;
-    private String value;
+    private final String name;
+    private final String value;
+
+    public ExternalServicesPropertiesData(final String name, final String value) {
+        this.name = name;
+        this.value = value;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
 }

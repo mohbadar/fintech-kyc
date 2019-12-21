@@ -1,13 +1,10 @@
+
 package af.asr.kyc.infrastructure.configuration.data;
-
-import lombok.Getter;
-
 import java.util.Date;
 
 /**
  * Immutable data object for global configuration property.
  */
-@Getter
 public class GlobalConfigurationPropertyData {
 
     @SuppressWarnings("unused")
@@ -25,8 +22,8 @@ public class GlobalConfigurationPropertyData {
     @SuppressWarnings("unused")
     private final boolean trapDoor;
 
-    public GlobalConfigurationPropertyData(final String name, final boolean enabled, final Long value, final Date dateValue, final String description,
-                                           final boolean trapDoor) {
+    public GlobalConfigurationPropertyData(final String name, final boolean enabled, final Long value, final Date dateValue, final String description, 
+            final boolean trapDoor) {
         this.name = name;
         this.enabled = enabled;
         this.value = value;
@@ -37,7 +34,7 @@ public class GlobalConfigurationPropertyData {
     }
 
     public GlobalConfigurationPropertyData(final String name, final boolean enabled, final Long value, Date dateValue, final Long id,
-                                           final String description, final boolean isTrapDoor) {
+            final String description, final boolean isTrapDoor) {
         this.name = name;
         this.enabled = enabled;
         this.value = value;
@@ -46,4 +43,34 @@ public class GlobalConfigurationPropertyData {
         this.description = description;
         this.trapDoor = isTrapDoor;
     }
+
+	public String getName() {
+		return this.name;
+	}
+
+	public boolean isEnabled() {
+		return this.enabled;
+	}
+
+	public Long getValue() {
+		return this.value;
+	}
+
+	public Date getDateValue() {
+		return this.dateValue;
+	}
+
+	public Long getId() {
+		return this.id;
+	}
+
+	public String getDescription() {
+		return this.description;
+	}
+
+	public boolean isTrapDoor() {
+		return this.trapDoor;
+	}
+    
+    
 }

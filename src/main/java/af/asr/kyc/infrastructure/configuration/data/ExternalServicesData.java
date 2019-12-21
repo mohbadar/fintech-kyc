@@ -1,12 +1,22 @@
+
 package af.asr.kyc.infrastructure.configuration.data;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@AllArgsConstructor
-@Getter
 public class ExternalServicesData {
 
-    private Long id;
-    private String name;
+    private final Long id;
+    private final String name;
+
+    public ExternalServicesData(final Long id, final String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
 }

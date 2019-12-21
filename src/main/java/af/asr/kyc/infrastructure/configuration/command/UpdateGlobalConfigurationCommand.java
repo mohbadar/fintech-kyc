@@ -1,13 +1,11 @@
-package af.asr.kyc.infrastructure.configuration.command;
 
-import lombok.Getter;
+package af.asr.kyc.infrastructure.configuration.command;
 
 import java.util.Map;
 
 /**
  * Immutable command for updating global configuration settings.
  */
-@Getter
 public class UpdateGlobalConfigurationCommand {
 
     private final Map<String, Boolean> globalConfiguration;
@@ -16,4 +14,7 @@ public class UpdateGlobalConfigurationCommand {
         this.globalConfiguration = globalConfigurationMap;
     }
 
+    public Map<String, Boolean> getGlobalConfiguration() {
+        return this.globalConfiguration;
+    }
 }
