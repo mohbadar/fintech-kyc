@@ -4,6 +4,7 @@ package af.asr.kyc.infrastructure.core.serialization;
 import java.util.Collection;
 import java.util.Set;
 
+import af.asr.kyc.infrastructure.core.service.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

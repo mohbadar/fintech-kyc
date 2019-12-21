@@ -1,6 +1,8 @@
 
 package af.asr.kyc.infrastructure.core.serialization;
 
+import af.asr.kyc.infrastructure.core.service.Page;
+
 import java.util.Collection;
 import java.util.Set;
 
