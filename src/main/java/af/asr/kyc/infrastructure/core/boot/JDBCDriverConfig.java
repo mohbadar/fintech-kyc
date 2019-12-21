@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
-//@Service
+@Service
 public class JDBCDriverConfig {
 
     private final static String DRIVER_CLASS_PROPERTYNAME = "DRIVERCLASS_NAME" ;
